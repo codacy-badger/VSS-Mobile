@@ -13,7 +13,6 @@ import com.example.myapplication.R;
 
 import org.dhbw.se.movietunes.controller.SearchByTitleController;
 import org.dhbw.se.movietunes.model.Song;
-import org.dhbw.se.movietunes.player.Player;
 import org.dhbw.se.movietunes.player.SpotifyPlayer;
 import org.dhbw.se.movietunes.player.YoutubePlayer;
 
@@ -25,8 +24,8 @@ public class SearchResultActivity extends AppCompatActivity implements AdapterVi
     ListView mListView;
 
     List<Song> currentSongList = null;
-    Player player;
-    Player player2;
+    SpotifyPlayer player;
+    YoutubePlayer player2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
